@@ -13,4 +13,7 @@ Make a call for the constructor as
 new_movie = movie.Movie('title', 'url_to_poster', 'url_to_youtube_trailer', 'details')
 ```
 
-If no description is available, pass `details` as `''` (empty `str`).
+If no description is available, pass `details` as `''` (empty `str`).    
+  
+  
+Developed as a part of Udacity Nanodegree course.
