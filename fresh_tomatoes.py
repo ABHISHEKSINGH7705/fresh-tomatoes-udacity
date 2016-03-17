@@ -143,7 +143,7 @@ def create_movie_tiles_content(movies):
         # Format movie details
         details = movie.details
         if len(movie.details) > 300:
-            details = movie.details[-297:] + '...'
+            details = movie.details[:297] + '...'
 
         # Append the tile for the movie with its content filled in
         content += movie_tile_content.format(

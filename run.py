@@ -2,7 +2,6 @@ import movie
 from fresh_tomatoes import open_movies_page
 
 if __name__ == "__main__":
-    movies = []
     raw_movies_data = [
         (
             'Deadpool',
@@ -23,15 +22,12 @@ if __name__ == "__main__":
             'Marvel\'s The Avengers[4] (classified under the name Marvel Avengers Assemble in the United Kingdom and Ireland),[1][5] or simply The Avengers, is a 2012 American superhero film based on the Marvel Comics superhero team of the same name, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures.1 It is the sixth film in the Marvel Cinematic Universe. The film was written and directed by Joss Whedon and features an ensemble cast that includes Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, Jeremy Renner, Tom Hiddleston, Clark Gregg, Cobie Smulders, Stellan Skarsgård, and Samuel L. Jackson. In the film, Nick Fury, director of the peacekeeping organization S.H.I.E.L.D., recruits Iron Man, Captain America, the Hulk, and Thor to form a team that must stop Thor\'s brother Loki from subjugating Earth.'
         ),
         (
-            'Avengers',
-            'http://interhost.hu/stuff/pics/posters/Avengers.jpg',
-            'https://www.youtube.com/watch?v=eOrNdBpGMv8',
-            'Marvel\'s The Avengers[4] (classified under the name Marvel Avengers Assemble in the United Kingdom and Ireland),[1][5] or simply The Avengers, is a 2012 American superhero film based on the Marvel Comics superhero team of the same name, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures.1 It is the sixth film in the Marvel Cinematic Universe. The film was written and directed by Joss Whedon and features an ensemble cast that includes Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, Jeremy Renner, Tom Hiddleston, Clark Gregg, Cobie Smulders, Stellan Skarsgård, and Samuel L. Jackson. In the film, Nick Fury, director of the peacekeeping organization S.H.I.E.L.D., recruits Iron Man, Captain America, the Hulk, and Thor to form a team that must stop Thor\'s brother Loki from subjugating Earth.'
+            'The Divergent Series : Allegiant',
+            'http://hollywoodnewssource.com/wp-content/uploads/2016/02/shailene-woodley-the-divergent-series-allegiant-posters_1.jpg',
+            'https://www.youtube.com/watch?v=tE8LEPSTK6A',
+            'After the earth-shattering revelations of Insurgent, Tris (Shailene Woodley) must escape with Four (Theo James) and go beyond the wall enclosing Chicago. For the first time ever, they will leave the only city and family they have ever known to find a peaceful solution for their embroiled city. Once outside, old discoveries are quickly rendered meaningless with the revelation of shocking new truths. Tris and Four must quickly decide who they can trust as a ruthless battle ignites beyond the walls of Chicago which threatens all of humanity. To survive, Tris will be forced to make impossible choices about courage, allegiance, sacrifice.'
         )
     ]
 
-    for data in raw_movies_data:
-        movie_to_add = movie.Movie(data[0], data[1], data[2], data[3])
-        movies.append(movie_to_add)
-
+    movies = [movie.Movie(temp[0], temp[1], temp[2], temp[3]) for temp in raw_movies_data]
     open_movies_page(movies)
