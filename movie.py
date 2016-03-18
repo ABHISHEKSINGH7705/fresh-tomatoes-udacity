@@ -2,7 +2,13 @@ class Movie:
     '''
     This class is a data structure that
     stores all information about a movie.
+
+    Attributes:
+    title                   Title of movie
+    poster_image_url        URL of poster (box art)
+    trailer_youtube_url     URL of trailer of the movie on YouTube
     '''
+
     title = ''
     poster_image_url = ''
     trailer_youtube_url = ''

@@ -1,6 +1,6 @@
-import webbrowser
 import os
 import re
+import webbrowser
 
 # Styles and scripting for the page
 main_page_head = '''
