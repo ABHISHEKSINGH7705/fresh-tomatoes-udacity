@@ -1,13 +1,14 @@
 class Movie:
     '''
-    This class stores all information about a movie.
+    This class is a data structure that
+    stores all information about a movie.
     '''
     title = ''
     poster_image_url = ''
     trailer_youtube_url = ''
     details = 'No Details Available'
 
-    # Constructors
+    # Constructor
     def __init__(self, title, poster_image_url, trailer_youtube_url, details):
         self.title = title
         self.poster_image_url = poster_image_url

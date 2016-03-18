@@ -15,5 +15,10 @@ new_movie = movie.Movie('title', 'url_to_poster', 'url_to_youtube_trailer', 'det
 
 If no description is available, pass `details` as `''` (empty `str`).    
   
+
+#### Sample Run
+
+`run.py` can be executed to check functionality.
+
   
 Developed as a part of Udacity Nanodegree course.

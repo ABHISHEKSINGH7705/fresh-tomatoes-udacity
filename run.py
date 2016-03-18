@@ -2,6 +2,7 @@ import movie
 from fresh_tomatoes import open_movies_page
 
 if __name__ == "__main__":
+    # Declaring movies
     raw_movies_data = [
         (
             'Deadpool',
@@ -29,5 +30,8 @@ if __name__ == "__main__":
         )
     ]
 
+    # Wrapping movies in a list
     movies = [movie.Movie(temp[0], temp[1], temp[2], temp[3]) for temp in raw_movies_data]
+
+    # Calling to generate HTML page
     open_movies_page(movies)
